@@ -69,66 +69,6 @@ export class FormComponent implements OnInit {
     return this.profileForm.get('maritalStatus');
   }
 
-  // addEmployee() {
-  //   console.warn(this.profileForm.value);
-  //   const {
-  //     name,
-  //     position,
-  //     avalibiltyDate,
-  //     salary,
-  //     dateOfBirth,
-  //     address,
-  //     phoneNumber,
-  //     email,
-  //     maritalStatus,
-  //     resume,
-  //   } = this.profileForm.value;
-  //   const newEmployee = {
-  //     name: name,
-  //     position: position,
-  //     avalibiltyDate: avalibiltyDate,
-  //     salary: salary,
-  //     dateOfBirth: dateOfBirth,
-  //     address: address,
-  //     phoneNumber: phoneNumber,
-  //     email: email,
-  //     maritalStatus: maritalStatus,
-  //     resume: resume,
-  //   };
-
-  //   var formData: any = new FormData();
-
-  //   formData.append('name', newEmployee.name);
-  //   formData.append('position', newEmployee.position);
-  //   formData.append('avalibiltyDate', newEmployee.avalibiltyDate);
-  //   formData.append('salary', newEmployee.salary);
-  //   formData.append('address', newEmployee.address);
-  //   formData.append('dateOfBirth', newEmployee.dateOfBirth);
-  //   formData.append('phoneNumber', newEmployee.phoneNumber);
-  //   formData.append('email', newEmployee.email);
-  //   formData.append('maritalStatus', newEmployee.maritalStatus);
-  //   formData.append('resume', this.resumeFile);
-  //   console.log(formData);
-  //   console.log(newEmployee.name);
-
-  //   this.empService.addEmployee(formData).subscribe({
-  //     next: (employee) => {
-  //       console.log(formData);
-  //     },
-  //     error: (err) => {
-  //       console.log(err);
-  //     },
-  //     complete: () => {
-  //       Swal.fire({
-  //         position: 'top-end',
-  //         icon: 'success',
-  //         title: 'Product added sucsessfully ',
-  //         showConfirmButton: false,
-  //         timer: 1500,
-  //       });
-  //     },
-  //   });
-  // }
   onselect(event: any) {
     this.resumeFile = event.target.files[0];
 
