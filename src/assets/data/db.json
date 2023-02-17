@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "hala",
+    "position": "frontEnd",
+    "avalibiltyDate": "01/02/2022",
+    "salary": 10000,
+    "dateOfBirth": "08/08/1998",
+    "address": "banha",
+    "phoneNumber": 1149334819,
+    "email": "halaafaragg@gmail.com",
+    "maritalStatus": "single"
+  }
+]
