@@ -10,12 +10,9 @@ export class EmployeesService {
   private httpOption = {};
   constructor(private http: HttpClient) {}
   url = `http://localhost:3000/employees`;
-
   addEmployee(employee: object): Observable<Employess> {
     return this.http.post<Employess>(
       this.url,
-      // employee,
-
       JSON.stringify(employee),
       (this.httpOption = {
         headers: new HttpHeaders({
